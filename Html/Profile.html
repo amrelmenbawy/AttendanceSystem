@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../stlyes/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../stlyes/profile.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#Profile" >
+    <span id="Profile">
+
+    <div class="container-fluid">
+        <div class="row bg-light">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg fixed-top bg-info " data-bs-theme="dark" >
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><i class="fa-solid fa-address-card fa-2x" style="color: #ffffff;"></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Login.html" >Logout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#Profile" >Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="Attendance.html">Attendance</a>
+                            </li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+                <div class="vh-10"></div>
+    <div class="row  vh-100" >    
+    <div class="col-2 bg-black p-2 text-center d-flex flex-column">
+        <p class=" text-light lead">Welcome back</p>
+        <p class=" text-light " id="username"></p>
+        <button class="btn btn-primary mt-2" id="profileofemployee"> profile </button>
+        <button class="btn btn-primary mt-2" id="Reports">Reports</button>
+    </div>
+    <div class="col-12 col-md-10 p-3 d-none" id="profiletable">
+        <div class="accordion" id="accordions">
+            <div class="card">
+                <div class="card-header ">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardo">Profile</button>
+                </div>
+            <div class="collapse " id="cardo" data-bs-parent="#accordions">
+                <div class="card-body bg-black text-center " id="mycontinerforconfirmation">
+                    <table class="table text-light bg-black " id="confirmemployee">
+                        <thead>
+                            <tr>
+                                <th>Fname</th>
+                                <th>lname</th>
+                                <th>Address</th>
+                                <th>age</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            </div>
+    </div>
+
+
+
+
+
+
+    <div class="col-10  p-3 d-none" id="reporttable">
+        <div class="accordion" id="accordion">
+        <div class="card">
+            <div class="card-header ">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardone">Daily Report</button>
+            </div>
+        <div class="collapse " id="cardone" data-bs-parent="#accordion">
+            <div class="card-body text-center bg-black">
+                <table class="table text-light " id="dailytable">
+                </table>
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
+            </div>
+        </div>
+        <div class="card mt-1">
+            <div class="card-header ">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardtwo">Monthly Report</button>
+            </div>
+        <div class="collapse " id="cardtwo" data-bs-parent="#accordion">
+            <div class="card-body bg-black text-center ">
+                <table class="table text-light bg-black" id="monthyreport">
+                    <thead>
+                        <tr>
+                            <th>
+                                <select class="form-select bg-dark text-light" aria-label="Default select example"  id="months">
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option> 
+                                </select>
+                            </th>
+                            <th>Attendance Time</th>
+                            <th>Departure Time</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <!--<tbody>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody> -->
+                </table>
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
+        </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <!-- the end of navbar -->
+        </div>
+    </div>
+                
+    </span>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
