@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../stlyes/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../stlyes/Login.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#home" >
+    <span id="home">
+    <!-- ********************************************navbar*********************************************** -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-info st0" data-bs-theme="dark" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html"><i class="fa-solid fa-address-card fa-2x" style="color: #ffffff;"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" id="logout" aria-current="page" href="Home.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" id="Profile" href="Profile.html" >Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" id="Attendance">Attendance</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- the end of navbar -->
+    <!-- ***************************************login from ***************************************************** -->
+        <div class="container stfrom w-50 " id="loginform">
+
+            <form class="row g-3 needs-validation m-auto" novalidate>
+                    <div class=" col-md-6 input-group m-auto my-3 " >
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        <input class="form-control " name="username" type="text" placeholder="User Name" required/>
+                    <div class="valid-tooltip">
+                        is existing
+                    </div>
+                    <div class="invalid-tooltip">
+                        Please Enter your Right username 
+                        </div>
+                    </div>
+                    <div class=" col-md-4 input-group  m-auto my-3" >
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input class="form-control" type="password" placeholder="User Password" name="password" aria-labelledby="passwordHelpBlock" required/>
+                    <div class="valid-tooltip">
+                        is existing
+                    </div>
+                    <div class="invalid-tooltip">
+                        Please Enter your Right Password
+                    </div>
+                    </div>
+                    <div class="col-6 text-end">
+                    <button class="btn btn-primary" id="registerbtn">Register</button> 
+                    </div>
+                    <div class="col-6 text-start">
+                    <input type="submit" class="btn btn-primary" value="login"/>
+                    </div>
+            </form>        
+        </div>
+    <!-- ***********************************************the end of the Login from*****************************************-->
+</span>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
