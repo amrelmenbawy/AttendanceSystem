@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(to right, #316277, #417485, #34667c);
+    }
+
+.carousel-item>img{
+    height: 100vh;
+}
+.st0{
+    height: 12vh;
+}
+.stfrom{
+    padding:1rem;
+    height: auto;
+    background-image: linear-gradient(to top ,rgb(253, 193, 80),rgb(248, 184, 65),rgb(250, 162, 0));
+    border-radius: 1rem;
+    margin-top: 25vh;
+}
+.st1{
+    border: none;
+}
+.st1>img{
+    opacity: 0.5;
+    transition: all 2s;
+}
+.st1>img:hover{
+    opacity: 1;
+}
+.c1{
+    opacity: 0;
+    transition: all 2s;
+}
+.st1>img:hover ~.c1{
+    opacity: 1;
+}
+.cover{
+    background-image: url(images/laptop_top.jpg);
+    background-size: cover ;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cover>h2{
+    text-align: center;
+    margin: 2rem;
+}
+.cover>button{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    background-image:linear-gradient(to right ,rgb(207, 225, 231), rgb(64, 163, 196),rgb(3, 132, 175)) ;
+    border-radius: 1rem;
+
+}
+.cover>button:hover{
+    background-image:linear-gradient(to left ,rgb(207, 225, 231), rgb(64, 163, 196),rgb(3, 132, 175)) ;
+}
+.cover>button:active{
+    background-image: none;
+    background-color: blue;
+    color: white;
+}
+.st3{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.form-control:focus {
+color: var(--bs-body-color);
+background-color: var(--bs-body-bg);
+border-color: #08f753;
+outline: 0;
+box-shadow: 0 0 0 0.1rem rgb(0 249 0 / 25%);
+}
+.invalid-tooltip {
+position: initial;
+width: fit-content;
+}
+.valid-tooltip{
+position: inherit;
+width: fit-content;
+}
+
+/* 
+.invalideamil-tooltip {
+    position: initial;
+    width: fit-content;
+    top: 100%;
+    z-index: 5;
+    display: none;
+    max-width: 100%;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.1rem;
+    font-size: 0.875rem;
+    color: #fff;
+    background-color: var(--bs-danger);
+    border-radius: var(--bs-border-radius);
+  }
+.is-invalideamil ~ .invalid-tooltip {
+  display: block;
+} */
