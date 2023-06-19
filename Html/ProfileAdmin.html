@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../stlyes/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../stlyes/profile.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#Profile" >
+    <span id="Profile">
+        
+                <nav class="navbar navbar-expand-lg fixed-top bg-info  " data-bs-theme="dark" >
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><i class="fa-solid fa-address-card fa-2x" style="color: #ffffff;"></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Login.html" >Logout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#Profile" >Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="Attendance.html">Attendance</a>
+                            </li>
+                        </div>
+                    </div>
+                </nav>
+        <!-- the end of navbar -->
+                <div class="vh-10"></div>
+    <!--the body after nav  -->
+    <div class="container-fluid">
+    <div class="row vh-90" >    
+    <div class="col-12 col-md-2 bg-black p-2 text-center d-flex flex-column"  style="border-left: 5px solid rgb(68, 68, 68); border-right: 5px solid rgb(173, 171, 171);">
+        <p class=" text-light h3">Admin</p>
+        <p class=" text-light " id="username"></p>
+        <button class="btn btn-primary" id="confirmation">confirmation</button>
+        <button class="btn btn-primary mt-2" id="Reports">Reports</button>
+        <!--<button class="btn btn-primary  mt-2" id="Eidt">Eidt your profile </button>-->
+    </div>
+    <!-- confirm Empolyees -->
+    <div class="col-12 col-md-10 p-3 d-none" id="confirmationtable">
+        <div class="accordion" id="accordions">
+            <div class="card">
+                <div class="card-header ">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardo">Employees To confirm</button>
+                </div>
+            <div class="collapse " id="cardo" data-bs-parent="#accordions">
+                <div class="card-body bg-black text-center " id="mycontinerforconfirmation">
+                    <table class="table text-light bg-black " id="confirmemployee">
+                        <thead>
+                            <tr>
+                                <th>Fname</th>
+                                <th>lname</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Confirmation</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <p></p>
+                </div>
+            </div>
+            </div>
+            </div>
+    </div>
+    <!-- the end of Confirmation -->
+    <!-- Reportes tables  -->
+    <div class="col-12 col-md-10 p-3 d-none" id="reporttable">
+        <div class="accordion" id="accordion">
+            <div class="card">
+                <div class="card-header ">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardthere">All Employees</button>
+                </div>
+            <div class="collapse " id="cardthere" data-bs-parent="#accordion">
+                <div class="card-body bg-black text-center ">
+                    <table class="table text-light bg-black  " id="allemployees">
+                        <thead>
+                            <tr>
+                                <th>Fname</th>
+                                <th>lname</th>
+                                <th>Address</th>
+                                <th>age</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <p></p>
+                </div>
+            </div>
+            </div>
+        <div class="card mt-1">
+            <div class="card-header ">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardone">Full Report</button>
+            </div>
+        <div class="collapse " id="cardone" data-bs-parent="#accordion">
+            <div class="card-body text-center bg-black">
+                <table class="table text-light ">
+                    <thead>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="card mt-1">
+            <div class="card-header ">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardfour">late Report</button>
+            </div>
+        <div class="collapse " id="cardfour" data-bs-parent="#accordion">
+            <div class="card-body bg-black text-center ">
+                <table class="table text-light bg-black">
+                    <thead>
+                        <tr>
+                            <th>Jan</th>
+                            <th>fgg</th>
+                            <th>Mar</th>
+                            <th>Apr</th>
+                            <th>May</th>
+                            <th>June</th>
+                            <th>July</th>
+                            <th>Aug</th>
+                            <th>Sep</th>
+                            <th>Oct</th>
+                            <th>Nov</th>
+                            <th>Dec</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
+        </div>
+            </div>
+        <div class="card mt-1">
+            <div class="card-header ">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardfive">Exuce Report</button>
+            </div>
+        <div class="collapse " id="cardfive" data-bs-parent="#accordion">
+            <div class="card-body bg-black text-center ">
+                <table class="table text-light bg-black">
+                    <thead>
+                        <tr>
+                            <th>Jan</th>
+                            <th>Feb</th>
+                            <th>Mar</th>
+                            <th>Apr</th>
+                            <th>May</th>
+                            <th>June</th>
+                            <th>July</th>
+                            <th>Aug</th>
+                            <th>Sep</th>
+                            <th>Oct</th>
+                            <th>Nov</th>
+                            <th>Dec</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
+        </div>
+            </div>
+        <div class="card mt-1">
+            <div class="card-header ">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#cardsix">Employees Brief</button>
+            </div>
+        <div class="collapse " id="cardsix" data-bs-parent="#accordion">
+            <div class="card-body bg-black text-center ">
+                <table class="table text-light bg-black">
+                    <thead>
+                        <tr>
+                            <th>Jan</th>
+                            <th>Feb</th>
+                            <th>Mar</th>
+                            <th>Apr</th>
+                            <th>May</th>
+                            <th>June</th>
+                            <th>July</th>
+                            <th>Aug</th>
+                            <th>Sep</th>
+                            <th>Oct</th>
+                            <th>Nov</th>
+                            <th>Dec</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr><tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
+        </div>
+            </div>
+    
+        </div>
+        
+    </div>
+    <!-- the end of REportes table  -->
+    </div>
+    
+    </div>
+    <!-- the end of body -->
+                
+    </span>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/profileadmin.js"></script>
+</body>
+</html>
